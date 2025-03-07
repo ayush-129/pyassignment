@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "get-papers"
+version = "0.1.0"
+description = ""
+authors = ["Ayush Kumar <ayush129kumar@gmail.com>"]  # Use a string, not a dictionary
+readme = "README.md"
+packages = [{include = "get_papers", from = "src"}]
+
+[tool.poetry.dependencies]
+python = ">=3.12"  # Move `requires-python` here
+requests = "^2.32.3"
+pandas = "^2.2.3"
+
+[tool.poetry.scripts]
+get-papers-list = "get_papers.cli:main"
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
