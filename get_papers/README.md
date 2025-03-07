@@ -6,7 +6,7 @@
 
 2. Clone the repository:
 
-git clone https://github.com/yourusername/get_papers.git
+git clone 
 cd get_papers
 
 3. Install dependencies:
